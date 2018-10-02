@@ -1,0 +1,7 @@
+{
+  "name": "laf",
+  "private": true,
+  "dependencies": {
+    "swiper": "^4.4.1"
+  }
+}

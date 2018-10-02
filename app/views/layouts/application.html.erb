@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laf</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield :notiftop %>
+
+    <%= yield :flogo %>
+    <div class="wrapper-header">
+      <div class="col-header centering">
+        <div class="wrap-col profile">
+          <div class="col-prof wrap-profile">
+            <div class="img-profile">
+              <%= image_tag("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QU-9_zCvpWbvoK2HkXdZyVdigQNrWbw9Tn5D_N9lsj_mOfP-", class: "img-profile") %>
+
+            </div>
+            <div class="username">
+              <p>Raras sibarani</p>
+            </div>
+          </div>
+          <div class="col-prof usd">
+            <select class="" name="">
+              <option value="">$ USD</option>
+              <option value="">Other</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-header centering flogo-div">
+          <%= image_tag('flogo.png', class: 'flogo') %>
+      </div>
+      <div class="col-header wrapper-search">
+        <div class="col-right wrap-search">
+          <form>
+            <input type="text" name="search" class="search" onfocus="this.placeholder = 'Which product are you looking for?'" onblur="this.placeholder = ''">
+          </form>
+        </div>
+        <div class="col-right notification-wrap">
+          <div>
+            <%= image_tag('icon-cart.svg', class: 'notifiction-laf') %>
+          </div>
+          <div class="count-notif">2</div>
+        </div>
+      </div>
+    </div>
+    <%= yield :navmenu %>
+    <%= yield %>
+
+  </body>
+</html>
