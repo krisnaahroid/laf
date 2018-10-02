@@ -19,14 +19,102 @@
                 <h1>Just In.</h1>
                 <%= image_tag('brush.png', class: 'brush-just') %>
               </div>
-              <li class="ls"><a href="#">New This Week</a></li>
+              <li class="ls"><a href="#" class="isActive">New This Week</a></li>
               <li class="ls"><a href="#">Best Seller</a></li>
               <li class="ls"><a href="#">Back in Stock</a></li>
             </ul>
           </li>
           <li class="icon-drop">Shop <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %></li>
-          <li class="icon-drop">Designer <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %></li>
-          <li class="icon-drop">Sale</li>
+          <li class="icon-drop">Designer <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %>
+              <ul class="design-container">
+                <div class="wrap-design">
+                  <div class="wrap-title">
+                    <%= image_tag('brush3.png', class: 'brush-designer') %>
+                    <p>Designer.</p>
+                  </div>
+                  <div class="list-designer">
+                    <div id="filter-by">
+                      <span>
+                        <a>All</a>
+                        <a>A</a>
+                        <a>B</a>
+                        <a>C</a>
+                        <a>D</a>
+                        <a class="filter-disable">E</a>
+                        <a>F</a>
+                        <a>G</a>
+                        <a>H</a>
+                        <a class="filter-disable">I</a>
+                        <a class="filter-disable">J</a>
+                        <a>K</a>
+                        <a>L</a>
+                        <a>M</a>
+                        <a class="filter-disable">O</a>
+                        <a class="filter-disable">P</a>
+                        <a>Q</a>
+                        <a>R</a>
+                        <a>S</a>
+                        <a>T</a>
+                        <a class="filter-disable">U</a>
+                        <a>V</a>
+                        <a>W</a>
+                        <a class="filter-disable">X</a>
+                        <a>Y</a>
+                        <a>Z</a>
+                      </span>
+                    </div>
+                    <div class="by-designer">
+                      <div id="filtered">
+
+                        <div class="persons">
+                          <ul>
+                            <li><a>A</a></li>
+                            <li><a href="#">Amanda Rahardjo</a></li>
+                            <li><a href="#">And Other Days</a></li>
+                            <li><a href="#">Arrisa X</a></li>
+                          </ul>
+                        </div>
+                        <div class="persons">
+                            <ul>
+                              <li><a href="#">B</a></li>
+                              <li><a href="#">Bloom Et Champs</a></li>
+                              <li><a href="#">By Pozo</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="persons">
+                          <ul>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">Chapelet</a></li>
+                            <li><a href="#">Claude</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="persons">
+                          <ul>
+                            <li><a href="#">D</a></li>
+                            <li><a href="#">Dhapelet</a></li>
+                            <li><a href="#">Dlaude</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+          </li>
+          <li class="icon-drop sale">Sale <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %>
+            <ul class="sub-menu">
+              <div class="title-sub">
+                <h1 class="sale-head">Sale.</h1>
+                <%= image_tag('brush2.png', class: 'brush-just') %>
+              </div>
+              <p>All</p>
+              <li class="ls"><a href="#">50% Off</a></li>
+              <li class="ls"><a href="#">Under 200k</a></li>
+              <li class="ls"><a href="#">Under 500k</a></li>
+            </ul>
+          </li>
           <li>Stories</li>
           <li>Instashop</li>
         </ul>
