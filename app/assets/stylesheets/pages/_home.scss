@@ -3,7 +3,6 @@
 }
 
 .wrapper-header{
-  height: 100%;
   border-bottom: solid 1px #e2e2e2;
   padding-top: 15px;
   padding-bottom: 12px;
@@ -15,8 +14,8 @@
 
 
   .flogo{
-    width: 250px;
-    padding-top: 10px;
+    max-width: 250px;
+    padding-top: 18px;
   }
 
   .wrapper-search{
@@ -45,6 +44,10 @@
         position: absolute;
         top: 8px;
         right: 0;
+
+        p{
+          margin-top: -4px;
+        }
       }
     }
 
@@ -103,6 +106,7 @@
     .wrap-col{
       display: flex;
 
+
       .wrap-profile{
         display: flex;
         box-sizing: border-box;
@@ -114,7 +118,7 @@
             text-align: center;
             position: relative;
             font-family: cera;
-            top: 5px;
+            top: 10px;
             color: #202027;
             padding-top: 5px;
             padding-bottom: 5px;
@@ -122,7 +126,46 @@
             font-size: 12px;
             border-right: solid 2px #e2e2e2;
           }
+
+
         }
+
+        .profile-dropdown{
+          width: 289px;
+          height: auto;
+          background-color: #f0e9e1;
+          position: absolute;
+          left: 0;
+          margin-top: 4.2%;
+          z-index: 999;
+          visibility: hidden;
+          display: none;
+          box-sizing: border-box;
+          padding: 30px;
+          transition: 0.5s ease-in-out;
+          opacity: 0.2;
+
+          .list-item-profile{
+            margin-top: 20px;
+          }
+
+          img{
+            width: 16px;
+          }
+
+          a{
+             font-family: cerathin;
+             font-size: 14px;
+             font-weight: 300;
+             font-style: normal;
+             font-stretch: normal;
+             line-height: normal;
+             letter-spacing: normal;
+             color: #202027;
+             text-decoration: none;
+          }
+        }
+
       }
     }
 
@@ -132,6 +175,7 @@
       .img-profile{
         width: 35px;
         height: 35px;
+        margin-top: 5px;
         border-radius: 100px;
       }
 
@@ -141,7 +185,7 @@
     .usd{
       box-sizing: border-box;
       padding-left: 15px;
-      padding-top: 12px;
+      padding-top: 14px;
       font-size: 12px;
 
 
@@ -180,6 +224,7 @@
 }
 
 
+
 .swiper-container {
       width: 100%;
       height: 100%;
@@ -202,3 +247,28 @@
       -webkit-align-items: center;
       align-items: center;
     }
+
+#pro:hover > .profile-dropdown{
+  visibility: visible;
+  display: block;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+  z-index: 99992;
+}
+
+
+.menu-rwd{
+  margin-top: 10px;
+  display: none;
+  div{
+    width: 15px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: rgb(64, 64, 64);
+    margin-top: 5px;
+  }
+
+  div:nth-child(1){
+    width: 20px;
+  }
+}

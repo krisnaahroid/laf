@@ -1,12 +1,24 @@
 @font-face {
     font-family: cera;
     src: url('Cera_Pro_Regular.otf') format('truetype');
-    font-weight: bold;
 }
 
+@font-face {
+    font-family: cerathin;
+    src: url('Cera_Pro_Thin.otf') format('truetype');
+}
+
+@font-face {
+    font-family: ceramedium;
+    src: url('Cera_Pro_Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: ceralight;
+    src: url('Cera_Pro_Light.otf') format('truetype');
+}
 
 @font-face {
     font-family: gabriela;
     src: url('Gabriela_Stencil_Bold.otf') format('truetype');
-    font-weight: bold;
 }

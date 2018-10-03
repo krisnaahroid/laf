@@ -20,20 +20,6 @@
     }
   }
 
-  .flogo-div{
-    display: none;
-  }
-
-  .flogo-laf{
-    text-align: center;
-    padding-top: 10px;
-    box-sizing: border-box;
-    display: block;
-    img{
-      width: 200px;
-    }
-  }
-
   .username{
     display: none;
   }
@@ -47,6 +33,11 @@
   .usd{
     width: 100px;
 
+  }
+
+  .swiper-container{
+    height: 100px;
+    width: 100%;
   }
 
   .swiper-slide {
@@ -67,6 +58,48 @@
       }
     }
   }
+
+  #pro{
+    display: none;
+  }
+  .usd{
+    display: none;
+  }
+
+  .menu-rwd{
+    margin-top: 2px;
+    display: block;
+  }
+
+
+  .flogo{
+    width: 110px;
+    margin-top: -10px;
+  }
+
+  #nav-menu{
+    display: none;
+  }
+
+  .wrap-search{
+    display: none;
+  }
+
+  #notify{
+    margin-left: 80px;
+    margin-top: -10px;
+  }
+
+  #fashions{
+    margin: 0px;
+    margin-top: 15px;
+
+    .box-laf .designer-name{
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
 
 
 

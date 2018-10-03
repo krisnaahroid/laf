@@ -1,0 +1,162 @@
+.wrapper-rwd-menu{
+  width: 0;
+  height: 100%;
+  background-color: #FDEAE5;
+  position: absolute;
+  z-index: 99999;
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.show-menu{
+  width: 80%;
+  transition: 0.5s;
+}
+
+.wrap-slider-inc{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.search-form{
+  height: 50px;
+  input{
+    border: none;
+    background-color: transparent;
+    color: #707070;
+  }
+
+  input:focus{
+    outline: none;
+    border-bottom: 2px solid #bebebe;
+    padding-bottom: 10px;
+    transition: 0.2s;
+  }
+
+  .form-laf{
+    margin-top: 15px;
+  }
+}
+
+ul > li{
+  margin-top: 15px;
+  font-weight: 550;
+  font-family: ceramedium;
+  a:hover{
+    color: #202027;
+  }
+}
+
+ul > li > a{
+  color: #202027;
+
+
+}
+
+
+.sub-justin{
+
+  a{
+    font-family: cerathin;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #202027;
+    transition: 0.3s;
+  }
+
+
+  a:hover{
+    margin-left: 8px;
+  }
+}
+
+.sub-designer-slider{
+  a{
+    font-family: cerathin;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #202027;
+    transition: 0.3s;
+  }
+
+  a:hover{
+    margin-left: 8px;
+  }
+}
+
+.sub-sale-slider{
+  a{
+    font-family: cerathin;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #202027;
+    transition: 0.3s;
+  }
+
+  a:hover{
+    margin-left: 8px;
+  }
+}
+
+.sub-designer-slider{
+  display: none;
+}
+
+.sub-sale-slider{
+  display: none;
+}
+
+.sub-justin{
+  display: none;
+}
+
+.visible-nav{
+  display: block;
+}
+
+.sl-bottom{
+position: relative;
+top: 150px;
+
+a{
+  color: #202027;
+  font-weight: 550;
+}
+  .cart{
+
+    img{
+      margin-top: -5px;
+    }
+
+    .counter{
+      position: absolute;
+      right: 0;
+      top: 2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      background-color: rgb(74, 74, 74);
+
+      p{
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+        top: -3px;
+      }
+    }
+  }
+}

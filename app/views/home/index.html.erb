@@ -10,7 +10,7 @@
     <% end %>
 
   <% content_for :navmenu do %>
-    <div class="wrapper-navmenu">
+    <div class="wrapper-navmenu" id="nav-menu">
       <div class="wrap-menu">
         <ul class="nav">
           <li class="icon-drop justin">Just in <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %>
@@ -25,7 +25,7 @@
             </ul>
           </li>
           <li class="icon-drop">Shop <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %></li>
-          <li class="icon-drop">Designer <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %>
+          <li class="icon-drop design-drop">Designer <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %>
               <ul class="design-container">
                 <div class="wrap-design">
                   <div class="wrap-title">
@@ -120,103 +120,162 @@
         </ul>
       </div>
     </div>
+
+    <div class="wrapper-rwd-menu">
+      <div class="wrap-slider-inc">
+        <div class="search-form">
+          <form action="#">
+            <div class="form-laf">
+              <input type="text" name="" placeholder="Search">
+            </div>
+          </form>
+        </div>
+        <div class="l-slider">
+          <ul class="nav-slider">
+            <li id="just-in"><a href="#">Just In</a>
+              <ul class="sub-justin">
+                <li><a href="#" class="neweek">New This Week</a></li>
+                <li><a href="#">Best Seller</a></li>
+                <li><a href="#">Back in Stock</a></li>
+              </ul>
+            </li>
+            <li>Shop</li>
+            <li id="designer-laf"><a href="#">Designer</a>
+              <ul class="sub-designer-slider">
+                <li><a href="#">View All Designers</a></li>
+              </ul>
+            </li>
+            <li id="sale-laf"><a href="#">Sale</a>
+              <ul class="sub-sale-slider">
+                <li><a href="#">All</a></li>
+                <li><a href="#">50% Off</a></li>
+                <li><a href="#">Under 200k</a></li>
+                <li><a href="#">Under 500k</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Instashop</a></li>
+          </ul>
+        </div>
+        <div class="sl-bottom">
+          <a href="#">
+            <div class="cart">
+              <%= image_tag('icon-cart.svg') %> SHOPPING CART
+              <div class="counter"><p>2</p></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
   <% end %>
 
 
-<div class="container-slider">
   <div class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
-      <div class="wrapper-slider">
-        <div class="wrap-slide">
-          <%= image_tag('fashion.png', class: 'model-fashion') %>
-        </div>
-        <div class="wrap-slide">
-          <div class="wrap-content">
-            <div class="title-slide">
-              <h1>New  Collection  is Available Here</h1>
-            </div>
-            <div class="content-slide">
-              <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum.</p>
-            </div>
-            <div class=" btn-slide">
-              <a href="#" class="btn-slide-1">View Collections</a>
-            </div>
-          </div>
-        </div>
-      </div>
+        <a href="#">
+          <%= image_tag('slider1.jpg') %>
+        </a>
     </div>
     <div class="swiper-slide">
-      <div class="wrapper-slider">
-        <div class="wrap-slide">
-          <%= image_tag('fashion.png', class: 'model-fashion') %>
-        </div>
-        <div class="wrap-slide">
-          <div class="wrap-content">
-            <div class="title-slide">
-              <h1>New  Collection  is Available Here</h1>
-            </div>
-            <div class="content-slide">
-              <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum.</p>
-            </div>
-            <div class=" btn-slide">
-              <a href="#" class="btn-slide-1">View Collections</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a href="#">
+        <%= image_tag('slider1.jpg') %>
+      </a>
     </div>
     <div class="swiper-slide">
-      <div class="wrapper-slider">
-        <div class="wrap-slide">
-          <%= image_tag('fashion.png', class: 'model-fashion') %>
-        </div>
-        <div class="wrap-slide">
-          <div class="wrap-content">
-            <div class="title-slide">
-              <h1>New  Collection  is Available Here</h1>
-            </div>
-            <div class="content-slide">
-              <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum.</p>
-            </div>
-            <div class=" btn-slide">
-              <a href="#" class="btn-slide-1">View Collections</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a href="#">
+        <%= image_tag('slider1.jpg') %>
+      </a>
     </div>
-    <div class="swiper-slide">
-      <div class="wrapper-slider">
-        <div class="wrap-slide">
-          <%= image_tag('fashion.png', class: 'model-fashion') %>
-        </div>
-        <div class="wrap-slide">
-          <div class="wrap-content">
-            <div class="title-slide">
-              <h1>New  Collection  is Available Here</h1>
-            </div>
-            <div class="content-slide">
-              <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum.</p>
-            </div>
-            <div class=" btn-slide">
-              <a href="#" class="btn-slide-1">View Collections</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide">Slide 5</div>
-    <div class="swiper-slide">Slide 6</div>
   </div>
   <!-- Add Arrows -->
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
 </div>
+
+
+<!-- content -->
+
+
 </div>
 
-<h1>test</h1>
 
 
-
+<div class="row wrap-content-fashion" id="fashions">
+  <div class="col">
+    <div class="box-laf">
+      <div class="pic-laf">
+        <%= image_tag('fashions/wedding.jpg') %>
+      </div>
+      <div class="designer-name">
+        <h1>MICHELLE MARYAM</h1>
+      </div>
+      <div class="line"></div>
+      <div class="body-fas">
+        <p>As head designer of MARYALLE, Michelle is the epitome of wanderlust and dedication.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="box-laf">
+      <div class="pic-laf">
+        <%= image_tag('fashions/insta-worthy.jpg') %>
+      </div>
+      <div class="designer-name">
+        <h1>MICHELLE MARYAM</h1>
+      </div>
+      <div class="line"></div>
+      <div class="body-fas">
+        <p>As head designer of MARYALLE, Michelle is the epitome of wanderlust and dedication.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="box-laf">
+      <div class="pic-laf">
+        <%= image_tag('fashions/wedding.jpg') %>
+      </div>
+      <div class="designer-name">
+        <h1>MICHELLE MARYAM</h1>
+      </div>
+      <div class="line"></div>
+      <div class="body-fas">
+        <p>As head designer of MARYALLE, Michelle is the epitome of wanderlust and dedication.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="box-laf">
+      <div class="pic-laf">
+        <%= image_tag('fashions/girl1.jpeg') %>
+      </div>
+      <div class="designer-name">
+        <h1>MICHELLE MARYAM</h1>
+      </div>
+      <div class="line"></div>
+      <div class="body-fas">
+        <p>As head designer of MARYALLE, Michelle is the epitome of wanderlust and dedication.</p>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+<!-- =========== Footer =============  -->
+
+<%= content_for :footer do %>
+  <div class="container-footer">
+    <div class="title-footer">
+      <h1>be in the loop</h1>
+    </div>
+  </div>
+<% end %>

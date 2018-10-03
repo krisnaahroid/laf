@@ -16,13 +16,72 @@
     <div class="wrapper-header">
       <div class="col-header centering">
         <div class="wrap-col profile">
-          <div class="col-prof wrap-profile">
+          <div class="menu-rwd" id="menu-responsive">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div class="col-prof wrap-profile" id="pro">
             <div class="img-profile">
               <%= image_tag("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QU-9_zCvpWbvoK2HkXdZyVdigQNrWbw9Tn5D_N9lsj_mOfP-", class: "img-profile") %>
 
             </div>
             <div class="username">
               <p>Raras sibarani</p>
+            </div>
+
+            <div class="profile-dropdown">
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-wishlist.svg') %> MY WISHLIST
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-account.svg') %> ACCOUNT DETAILS
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-credit.svg') %> STORE CREDITS
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-address.svg') %> ADDRESS BOOK
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-cc.svg') %> MY CREDIT CARDS
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-myorder.svg') %> MY ORDERS
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-myreturns.svg') %> MY RETURNS
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-notif.svg') %> NOTIFICATION
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-myorder.svg') %> LOVE AND FLAIR INSIDER
+                </a>
+              </div>
+              <div class="list-item-profile">
+                <a href="#">
+                  <%= image_tag('icons/icon-myac-logout.svg') %> SIGN OUT
+                </a>
+              </div>
             </div>
           </div>
           <div class="col-prof usd">
@@ -32,9 +91,11 @@
             </select>
           </div>
         </div>
+
+
       </div>
       <div class="col-header centering flogo-div">
-          <%= image_tag('flogo.png', class: 'flogo') %>
+          <%= image_tag('l-flogo-header@3x.png', class: 'flogo') %>
       </div>
       <div class="col-header wrapper-search">
         <div class="col-right wrap-search">
@@ -42,16 +103,18 @@
             <input type="text" name="search" class="search" onfocus="this.placeholder = 'Which product are you looking for?'" onblur="this.placeholder = ''">
           </form>
         </div>
-        <div class="col-right notification-wrap">
+        <div class="col-right notification-wrap" id="notify">
           <div>
             <%= image_tag('icon-cart.svg', class: 'notifiction-laf') %>
           </div>
-          <div class="count-notif">2</div>
+          <div class="count-notif"><p>2</p></div>
         </div>
       </div>
     </div>
     <%= yield :navmenu %>
     <%= yield %>
 
+
+    <%= yield :footer %>
   </body>
 </html>
