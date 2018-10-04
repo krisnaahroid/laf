@@ -24,7 +24,88 @@
               <li class="ls"><a href="#">Back in Stock</a></li>
             </ul>
           </li>
-          <li class="icon-drop">Shop <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %></li>
+          <li class="icon-drop" id="shop-laf">Shop <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %>
+            <div class="container-shop-nav" id="showme">
+                <div class="nav-column">
+                    <div class="title">
+                      <p>Clothing.</p>
+                      <%= image_tag('brush-bigmenu.png') %>
+                    </div>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Bottoms</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Rompers + Jumpsuits</a></li>
+                        <li><a href="#">Outerwear</a></li>
+                        <li><a href="#">Sleepwear</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">Two-piece</a></li>
+                        <li><a href="#">Activewear</a></li>
+                        <li><a href="#">Intimates</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-column">
+
+                    <div class="title">
+                      <p>Shoes.</p>
+                      <%= image_tag('brush-bigmenu.png') %>
+                    </div>
+                    <ul>
+                        <li><a href="#">Driving shoes</a></li>
+                        <li><a href="#">Espadrilles</a></li>
+                        <li><a href="#">Loafers</a></li>
+                    </ul>
+
+
+                    <div class="title second-sub">
+                      <p>Living.</p>
+                      <%= image_tag('brush-bigmenu.png') %>
+                    </div>
+                    <ul>
+                        <li><a href="#">Driving shoes</a></li>
+                        <li><a href="#">Espadrilles</a></li>
+                        <li><a href="#">Loafers</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-column">
+
+                    <div class="title">
+                      <p>Accessories.</p>
+                      <%= image_tag('brush-bigmenu.png') %>
+                    </div>
+                    <ul>
+                        <li><a href="#">Pampers Diapers</a></li>
+                        <li><a href="#">Huggies Diapers</a></li>
+                        <li><a href="#">Seventh Generation</a></li>
+                        <li><a href="#">Diapers</a></li>
+                        <li><a href="#">Derbies</a></li>
+                        <li><a href="#">Driving shoes</a></li>
+                        <li><a href="#">Espadrilles</a></li>
+                        <li><a href="#">Loafers</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column">
+                    <div class="title">
+                      <p>Beauty.</p>
+                      <%= image_tag('brush-bigmenu.png') %>
+                    </div>
+                    <ul>
+                        <li><a href="#">Pampers Diapers</a></li>
+                        <li><a href="#">Huggies Diapers</a></li>
+                        <li><a href="#">Seventh Generation</a></li>
+                        <li><a href="#">Diapers</a></li>
+                        <li><a href="#">Derbies</a></li>
+                        <li><a href="#">Driving shoes</a></li>
+                        <li><a href="#">Espadrilles</a></li>
+                        <li><a href="#">Loafers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          </li>
           <li class="icon-drop design-drop">Designer <%= image_tag('icon-dropdown-grey.svg', class: 'drop-icon') %>
               <ul class="design-container">
                 <div class="wrap-design">
@@ -119,6 +200,7 @@
           <li>Instashop</li>
         </ul>
       </div>
+
     </div>
 
     <div class="wrapper-rwd-menu">
@@ -264,8 +346,198 @@
 
 
 
+<!-- Featured  -->
 
 
+
+  <div class="container-feature">
+    <div>
+      <h3 class="title-carosel-shop-categories">shop by category</h3>
+    </div>
+    <div class="owl-carousel owl-one">
+        <div class="item">
+          <p class="activeitem">Tops</p>
+        </div>
+        <div class="item"><p class="notActive">Dresses</p></div>
+        <div class="item"><p class="notActive">Rompers +Jumpsuits</p></div>
+        <div class="item"><p class="notActive">Outerwear</p></div>
+        <div class="item"><p class="notActive">Sleepwear</p></div>
+        <div class="item"><p class="notActive">Outerwear</p></div>
+        <div class="item"><p class="notActive">Sleepwear</p></div>
+    </div>
+    <div class="btns">
+      <div class="customNextBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+      <div class="customPreviousBtn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+    </div>
+  </div>
+
+
+<!-- ============= New Arrivals -->
+
+<div class="container-feature">
+  <div>
+    <h3 class="title-carosel-arrivals">new arrivals</h3>
+  </div>
+  <div class="owl-four owl-carousel owl-theme">
+      <div class="item">
+        <div class="product-box">
+          <ul class="product-social">
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-cart.png') %></a></li>
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-view.png') %></a></li>
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-wishlist.png') %></a></li>
+          </ul>
+          <div class="product-img-holder">
+            <div class="hot-sale">
+                <span>Sale</span>
+            </div>
+            <a href="#"><%= image_tag('products/image-product.jpg') %></a>
+          </div>
+          <div class="product-content-holder">
+              <h3>Front Row</h3>
+              <p class="nm">Ilsa Top</p>
+              <div class="sizing">
+                <div class="size"><p>XL</p></div>
+                <div class="size"><p>S</p></div>
+                <div class="size"><p>M</p></div>
+                <div class="size"><p>L</p></div>
+              </div>
+              <span><span class="hideCast">$80.00</span>$50.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="product-box">
+          <ul class="product-social">
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-cart.png') %></a></li>
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-view.png') %></a></li>
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-wishlist.png') %></a></li>
+          </ul>
+          <div class="product-img-holder">
+            <div class="hot-sale hide-sale">
+                <span>Sale</span>
+            </div>
+            <a href="#"><%= image_tag('products/image-product1.jpg') %></a>
+          </div>
+          <div class="product-content-holder">
+              <h3>Front Row</h3>
+              <p class="nm">Ilsa Top</p>
+              <div class="sizing">
+                <div class="size"><p>One size</p></div>
+              </div>
+              <span><span class="showCast">$80.00</span>$50.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="product-box">
+          <ul class="product-social">
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-cart.png') %></a></li>
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-view.png') %></a></li>
+            <li><a href="#"><%= image_tag('icons/icon-product-hover-wishlist.png') %></a></li>
+          </ul>
+          <div class="product-img-holder">
+            <div class="hot-sale hide-sale">
+                <span>Sale</span>
+            </div>
+            <a href="#"><%= image_tag('products/image-product3.jpg') %></a>
+          </div>
+          <div class="product-content-holder">
+              <h3>Front Row</h3>
+              <p class="nm">Ilsa Top</p>
+              <div class="sizing">
+                <div class="size"><p>XL</p></div>
+                <div class="size"><p>S</p></div>
+                <div class="size"><p>M</p></div>
+              </div>
+              <span><span class="hideCast">$80.00</span>$50.00</span>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+  <div class="btns">
+    <div class="productnext"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+    <div class="productprev"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+  </div>
+</div>
+
+<!-- ============= Brands Homepage ========== -->
+
+<div class="container-feature">
+  <div>
+    <h3 class="title-carosel-brands">brands</h3>
+  </div>
+  <div class="owl-three owl-carousel owl-theme">
+      <div class="item" id="branditm">
+        <div class="pic">
+          <%= image_tag('brands/brand1.jpg') %>
+        </div>
+        <div class="title">
+          <h2>SISSAE</h2>
+        </div>
+      </div>
+      <div class="item" id="branditm">
+        <div class="pic">
+          <%= image_tag('brands/brand2.jpg') %>
+        </div>
+        <div class="title">
+          <h2>SAINT X SINNER</h2>
+        </div>
+      </div>
+      <div class="item" id="branditm">
+        <div class="pic">
+          <%= image_tag('brands/brand3.jpg') %>
+        </div>
+        <div class="title">
+          <h2>SAINT PETER</h2>
+        </div>
+      </div>
+      <div class="item" id="branditm">
+        <div class="pic">
+          <%= image_tag('brands/brand4.jpg') %>
+        </div>
+        <div class="title">
+          <h2>ALOES</h2>
+        </div>
+      </div>
+      <div class="item" id="branditm">
+        <div class="pic">
+          <%= image_tag('brands/brand2.jpg') %>
+        </div>
+        <div class="title">
+          <h2>SISSAE</h2>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <!-- ===== SHOP OUR INSTAGRAM =======-->
+
+<div class="container-feature">
+  <div>
+    <h3 class="title-carosel">shop our instagram</h3>
+  </div>
+  <div class="owl-two owl-carousel owl-theme">
+      <div class="item" id="idshop">
+        <%= image_tag('shop_ig/shop1.jpg') %>
+      </div>
+      <div class="item" id="idshop">
+        <%= image_tag('shop_ig/shop2.jpg') %>
+      </div>
+      <div class="item" id="idshop">
+        <%= image_tag('shop_ig/shop3.jpg') %>
+      </div>
+      <div class="item" id="idshop">
+        <%= image_tag('shop_ig/shop4.jpg') %>
+      </div>
+  </div>
+  <div class="btns">
+    <div class="shopignext"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+    <div class="shopigprev"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+  </div>
+</div>
 
 
 
@@ -275,7 +547,45 @@
 <%= content_for :footer do %>
   <div class="container-footer">
     <div class="title-footer">
-      <h1>be in the loop</h1>
+      <p>be in the loop</p>
+    </div>
+    <div class="subcribe" >
+      <form action="#">
+          <div class="form-subcribe" id="subsribe">
+            <input type="text" placeholder="Enter your email address">
+          </div>
+          <div class="form-subcribe" id="subsribe">
+            <input type="submit" value="Subscribe" id="submit">
+          </div>
+      </form>
+    </div>
+    <div class="link-footer">
+      <span>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Payment Confirmation</a>
+        <a href="#">Returns + Exchange</a>
+        <a href="#">Contact Us</a>
+      </span>
+    </div>
+    <div class="link-footer2">
+      <span>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Installment program</a>
+      </span>
+    </div>
+
+    <div class="social-footer">
+      <span>
+        <a href="#"><%= image_tag('icons/icon-footer-ig.svg') %></a>
+        <a href="#"><%= image_tag('icons/icon-footer-fb.svg') %></a>
+        <a href="#"><%= image_tag('icons/icon-footer-wa.svg') %></a>
+      </span>
+    </div>
+    <div class="wrap-copyright">
+      <p>© 2018 LOVE AND FLAIR </p>
     </div>
   </div>
+
 <% end %>

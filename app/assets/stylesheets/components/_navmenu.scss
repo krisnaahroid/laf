@@ -19,35 +19,28 @@
         display:inline;
         padding: 5px 30px 5px 30px;
         box-sizing: border-box;
-        position: relative;
         z-index: 9999;
         font-family: ceramedium;
     }
 
     .nav li.justin:hover > ul.sub-menu{
       visibility: visible;
-      display: inline-block;
     }
 
     .nav li.sale:hover > ul.sub-menu{
       visibility: visible;
-      display: inline-block;
     }
 
-    .nav li.design:hover > ul.sub-menu{
-      visibility: visible;
-      display: inline-block;
-    }
+      // .nav li.design:hover > ul.sub-menu{
+      //   visibility: visible;
+      // }
 
     .nav li.design-drop:hover > ul.design-container{
       visibility: visible;
-      display: inline-block;
     }
 
     .nav > li .drop-icon{
-      position: absolute;
-      right: 15px;
-      top: 15px;
+
     }
 
 
@@ -56,7 +49,8 @@
       margin: 0 auto;
       list-style-type: none;
       text-align: left;
-      z-index: 9999
+      z-index: 9999;
+      cursor: pointer;
     }
 
     ul.sub-menu{
@@ -64,8 +58,7 @@
       position: absolute;
       visibility: hidden;
       display: block;
-      top: 120%;
-      left: 0;
+      margin-top: 15px;
       width: 180px;
       height: 240px;
       padding-top: 13px;
@@ -96,7 +89,7 @@
       .title-sub{
         position: relative;
         width: 100%;
-        padding-bottom: 40px;
+        padding-bottom: 25px;
         h1{
           font-size: 28px;
           font-weight: bold;
@@ -136,8 +129,8 @@
   visibility: hidden;
   display: block;
   position: absolute;
-  left: -60%;
-  top: 120%;
+  margin-top: 10px;
+  margin-right: 20px;
 
   .wrap-design{
     width: 85%;
@@ -243,4 +236,76 @@
        }
     }
   }
+}
+
+#shop-laf:hover > .container-shop-nav{
+  visibility: visible;
+}
+
+
+.container-shop-nav {
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 500px;
+    left: 0;
+    z-index: 99994;
+    overflow: hidden;
+    visibility: hidden;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 80px;
+
+    .nav-column{
+      width: 20%;
+      box-sizing: border-box;
+      padding-left: 10%;
+
+      ul{
+
+        li{
+
+          margin-top: 0px;
+          text-align: left;
+
+          a{
+            font-family: cera;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #202027;
+          }
+        }
+      }
+
+      .title{
+        position: relative;
+
+        p{
+           font-family: gabriela;
+           font-size: 30px;
+           font-weight: bold;
+           font-style: normal;
+           font-stretch: normal;
+           line-height: normal;
+           letter-spacing: normal;
+           color: #202027;
+        }
+        img{
+          position: absolute;
+          top: -50%;
+          left: 45%;
+        }
+      }
+
+      .second-sub{
+        margin-top: 40px;
+      }
+
+    }
 }

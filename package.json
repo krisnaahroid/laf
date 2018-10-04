@@ -2,6 +2,7 @@
   "name": "laf",
   "private": true,
   "dependencies": {
+    "owl.carousel": "^2.3.4",
     "swiper": "^4.4.1"
   }
 }

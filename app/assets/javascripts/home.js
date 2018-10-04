@@ -2,7 +2,8 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require swiper/dist/js/swiper.min
-
+//= require owl.carousel/dist/owl.carousel.min
+//= require main
 
 $(document).ready(function () {
   //initialize swiper when document ready
@@ -61,6 +62,123 @@ $(document).ready(function () {
     });
 
 
+    var owl = $('.owl-one');
+      owl.owlCarousel({
+        loop:true,
+        margin:10,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 8000,
+        autoplayHoverPause:true,
+        nav:false,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:6
+            }
+        }
+      });
+
+      // Custom Button
+      $('.customNextBtn').click(function() {
+        owl.trigger('next.owl.carousel');
+      });
+      $('.customPreviousBtn').click(function() {
+        owl.trigger('prev.owl.carousel');
+      });
+
+
+
+      var owl4 = $('.owl-four');
+        owl4.owlCarousel({
+          loop:true,
+          margin:10,
+          dots: false,
+          autoplay:false,
+          autoplayTimeout: 3000,
+          nav:false,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:4
+              },
+              1000:{
+                  items:4
+              }
+          }
+        });
+
+        // Custom Button
+        $('.productnext').click(function() {
+          owl4.trigger('next.owl.carousel');
+        });
+        $('.productprev').click(function() {
+          owl4.trigger('prev.owl.carousel');
+        });
+
+
+
+
+      var owl2 = $('.owl-two');
+        owl2.owlCarousel({
+          loop:true,
+          margin:10,
+          dots: false,
+          autoplay:true,
+          autoplayTimeout: 3000,
+          nav:false,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:4
+              }
+          }
+        });
+
+        // Custom Button
+        $('.shopignext').click(function() {
+          owl2.trigger('next.owl.carousel');
+        });
+        $('.shopigprev').click(function() {
+          owl2.trigger('prev.owl.carousel');
+        });
+
+
+        var owl3 = $('.owl-three');
+          owl3.owlCarousel({
+            loop:true,
+            margin:10,
+            dots: true,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 8000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:4
+                }
+            }
+          });
 
 
 

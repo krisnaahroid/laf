@@ -102,6 +102,23 @@
 
 
 
+// foooter
+.container-footer{
+  .subcribe{
+    .form-subcribe{
+      margin-left: 10px;
+
+      input[type=submit]#submit{
+          width: 220px;
+      }
+    }
+
+    #subsribe{
+      float: none;
+      margin: 0;
+    }
+  }
+}
 
 }
 
